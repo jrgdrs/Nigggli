@@ -1,6 +1,6 @@
 name: Build font and specimen
 
-on: release
+on: workflow_dispatch
 
 jobs:
   build:
