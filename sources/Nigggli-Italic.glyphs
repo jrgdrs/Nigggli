@@ -42128,7 +42128,7 @@ layers = (
 layerId = m002;
 shapes = (
 {
-pos = (0,517);
+pos = (50,517);
 ref = a;
 scale = (0.5041,0.5041);
 }
@@ -42139,7 +42139,7 @@ width = 234;
 layerId = m01;
 shapes = (
 {
-pos = (0,517);
+pos = (50,517);
 ref = a;
 scale = (0.5041,0.5041);
 }
@@ -42150,7 +42150,7 @@ width = 237;
 layerId = m003;
 shapes = (
 {
-pos = (0,517);
+pos = (50,517);
 ref = a;
 scale = (0.5041,0.5041);
 }
@@ -42161,7 +42161,7 @@ width = 469;
 layerId = m004;
 shapes = (
 {
-pos = (0,517);
+pos = (50,517);
 ref = a;
 scale = (0.5041,0.5041);
 }
@@ -42172,7 +42172,7 @@ width = 474;
 layerId = "C42BF1BA-B3BB-492C-A865-1DF6B235F68F";
 shapes = (
 {
-pos = (0,517);
+pos = (50,517);
 ref = a;
 scale = (0.5041,0.5041);
 }
@@ -42190,7 +42190,7 @@ layers = (
 layerId = m002;
 shapes = (
 {
-pos = (0,516);
+pos = (50,516);
 ref = o;
 scale = (0.5041,0.5041);
 }
@@ -42201,7 +42201,7 @@ width = 242;
 layerId = m01;
 shapes = (
 {
-pos = (0,517);
+pos = (50,517);
 ref = o;
 scale = (0.5041,0.5041);
 }
@@ -42212,7 +42212,7 @@ width = 242;
 layerId = m003;
 shapes = (
 {
-pos = (0,516);
+pos = (50,516);
 ref = o;
 scale = (0.5041,0.5041);
 }
@@ -42223,7 +42223,7 @@ width = 484;
 layerId = m004;
 shapes = (
 {
-pos = (0,517);
+pos = (50,517);
 ref = o;
 scale = (0.5041,0.5041);
 }
@@ -42234,7 +42234,7 @@ width = 484;
 layerId = "C42BF1BA-B3BB-492C-A865-1DF6B235F68F";
 shapes = (
 {
-pos = (0,516);
+pos = (50,516);
 ref = o;
 scale = (0.5041,0.5041);
 }
@@ -63076,7 +63076,7 @@ axesValues = (
 instanceInterpolations = {
 m002 = 1;
 };
-name = "Cd Thin Ita";
+name = "Condensed Thin Italic";
 weightClass = 100;
 widthClass = 3;
 },
@@ -63089,7 +63089,7 @@ instanceInterpolations = {
 m002 = 0.7625;
 m01 = 0.2375;
 };
-name = "Cd Light Italic";
+name = "Condensed Light Italic";
 weightClass = 300;
 widthClass = 3;
 },
@@ -63102,7 +63102,7 @@ instanceInterpolations = {
 m002 = 0.4125;
 m01 = 0.5875;
 };
-name = "Cd Regular Ita";
+name = "Condensed Italic";
 widthClass = 3;
 },
 {
@@ -63114,7 +63114,7 @@ instanceInterpolations = {
 m002 = 0.2;
 m01 = 0.8;
 };
-name = "Cd SemiBold Ita";
+name = "Condensed SemiBold Italic";
 weightClass = 600;
 widthClass = 3;
 },
@@ -63127,7 +63127,7 @@ instanceInterpolations = {
 m01 = 1;
 };
 isBold = 1;
-name = "Cd Bold Ita";
+name = "Condensed Bold Italic";
 weightClass = 700;
 widthClass = 3;
 },
@@ -63140,7 +63140,7 @@ instanceInterpolations = {
 m002 = 0.675;
 m003 = 0.325;
 };
-name = "Thin Ita";
+name = "Thin Italic";
 weightClass = 100;
 },
 {
@@ -63154,7 +63154,7 @@ m002 = 0.41834;
 m003 = 0.21687;
 m01 = 0.09853;
 };
-name = "Light Ita";
+name = "Light Italic";
 weightClass = 300;
 },
 {
@@ -63167,7 +63167,7 @@ instanceInterpolations = {
 m002 = 0.13125;
 m01 = 0.11875;
 };
-name = "Regular Ita";
+name = Italic;
 },
 {
 axesValues = (
@@ -63180,7 +63180,7 @@ m002 = 0.14287;
 m004 = 0.19083;
 m01 = 0.24796;
 };
-name = "SemiBold Ita";
+name = "SemiBold Italic";
 weightClass = 600;
 },
 {
@@ -63195,7 +63195,7 @@ m004 = 0.32308;
 m01 = 0.3801;
 };
 isBold = 1;
-name = "Bold Ita";
+name = "Bold Italic";
 weightClass = 700;
 },
 {
@@ -63207,7 +63207,7 @@ instanceInterpolations = {
 m004 = 0.45;
 m01 = 0.55;
 };
-name = "ExtraBold Ita";
+name = "ExtraBold Italic";
 weightClass = 800;
 },
 {
@@ -63219,7 +63219,7 @@ instanceInterpolations = {
 m002 = 0.375;
 m003 = 0.625;
 };
-name = "Ext Thin Ita";
+name = "Extended Thin Italic";
 weightClass = 100;
 widthClass = 7;
 },
@@ -63234,7 +63234,7 @@ m002 = 0.19111;
 m003 = 0.50706;
 m004 = 0.08405;
 };
-name = "Ext Light Ita";
+name = "Extended Light Italic";
 weightClass = 300;
 widthClass = 7;
 },
@@ -63249,7 +63249,7 @@ m002 = 0.10109;
 m003 = 0.3938;
 m004 = 0.25728;
 };
-name = "Ext Regular Ita";
+name = "Extended Italic";
 widthClass = 7;
 },
 {
@@ -63263,7 +63263,7 @@ m003 = 0.33187;
 m004 = 0.40562;
 m01 = 0.0375;
 };
-name = "Ext Semibold Ita";
+name = "Extended Semibold Italic";
 weightClass = 600;
 widthClass = 7;
 },
@@ -63278,7 +63278,7 @@ m003 = 0.19783;
 m004 = 0.67748;
 m01 = 0.02531;
 };
-name = "Ext Bold Ita";
+name = "Extended Bold Italic";
 weightClass = 700;
 widthClass = 7;
 },
@@ -63290,7 +63290,7 @@ axesValues = (
 instanceInterpolations = {
 m004 = 1;
 };
-name = "Ext xtraBold Ita";
+name = "Extended ExtraBold Italic";
 weightClass = 800;
 widthClass = 7;
 }

@@ -63061,7 +63061,7 @@ axesValues = (
 instanceInterpolations = {
 m002 = 1;
 };
-name = "Cd Thin";
+name = "Condensed Thin";
 weightClass = 100;
 widthClass = 3;
 },
@@ -63074,7 +63074,7 @@ instanceInterpolations = {
 m002 = 0.7625;
 m01 = 0.2375;
 };
-name = "Cd Light";
+name = "Condensed Light";
 weightClass = 300;
 widthClass = 3;
 },
@@ -63087,7 +63087,7 @@ instanceInterpolations = {
 m002 = 0.4125;
 m01 = 0.5875;
 };
-name = "Cd Regular";
+name = Condensed;
 widthClass = 3;
 },
 {
@@ -63099,7 +63099,7 @@ instanceInterpolations = {
 m002 = 0.2;
 m01 = 0.8;
 };
-name = "Cd SemiBold";
+name = "Condensed SemiBold";
 weightClass = 600;
 widthClass = 3;
 },
@@ -63112,7 +63112,7 @@ instanceInterpolations = {
 m01 = 1;
 };
 isBold = 1;
-name = "Cd Bold";
+name = "Condensed Bold";
 weightClass = 700;
 widthClass = 3;
 },
@@ -63204,7 +63204,7 @@ instanceInterpolations = {
 m002 = 0.375;
 m003 = 0.625;
 };
-name = "Ext Thin";
+name = "Extended Thin";
 weightClass = 100;
 widthClass = 7;
 },
@@ -63219,7 +63219,7 @@ m002 = 0.19111;
 m003 = 0.50706;
 m004 = 0.08405;
 };
-name = "Ext Light";
+name = "Extended Light";
 weightClass = 300;
 widthClass = 7;
 },
@@ -63234,7 +63234,7 @@ m002 = 0.10109;
 m003 = 0.3938;
 m004 = 0.25728;
 };
-name = "Ext Regular";
+name = Extended;
 widthClass = 7;
 },
 {
@@ -63248,7 +63248,7 @@ m003 = 0.33187;
 m004 = 0.40562;
 m01 = 0.0375;
 };
-name = "Ext Semibold";
+name = "Extended Semibold";
 weightClass = 600;
 widthClass = 7;
 },
@@ -63263,7 +63263,7 @@ m003 = 0.19783;
 m004 = 0.67748;
 m01 = 0.02531;
 };
-name = "Ext Bold";
+name = "Extended Bold";
 weightClass = 700;
 widthClass = 7;
 },
@@ -63275,7 +63275,7 @@ axesValues = (
 instanceInterpolations = {
 m004 = 1;
 };
-name = "Ext ExtraBold";
+name = "Extended ExtraBold";
 weightClass = 800;
 widthClass = 7;
 }
