@@ -9,7 +9,7 @@ fontbakery version: 0.12.9
 These won't break the CI job for now, but will become effective after some time if nobody raises any concern.
 
 
-<details><summary>[1] Nigggli-Italic[wdth,wght][wdth,wght].ttf</summary>
+<details><summary>[1] Nigggli[wdth,wght].ttf</summary>
 <div>
 <details>
     <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.article.html#"></a></summary>
@@ -31,7 +31,7 @@ These won't break the CI job for now, but will become effective after some time 
 </div>
 </details>
 
-<details><summary>[1] Nigggli[wdth,wght][wdth,wght].ttf</summary>
+<details><summary>[1] Nigggli-Italic[wdth,wght].ttf</summary>
 <div>
 <details>
     <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.article.html#"></a></summary>
@@ -60,7 +60,7 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 
-<details><summary>[13] Nigggli-Italic[wdth,wght][wdth,wght].ttf</summary>
+<details><summary>[12] Nigggli[wdth,wght].ttf</summary>
 <div>
 <details>
     <summary>🔥 <b>FAIL</b> The variable font 'wdth' (Width) axis coordinate must be 100 on the 'Regular' instance. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.fvar.html#"></a></summary>
@@ -72,26 +72,8 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 
-* 🔥 **FAIL** <p>The &quot;wdth&quot; axis coordinate of the &quot;Regular&quot; instance must be 100. Got 50.0 as a default value instead.</p>
+* 🔥 **FAIL** <p>The &quot;wdth&quot; axis coordinate of the &quot;Regular&quot; instance must be 100. Got 60.0 as a default value instead.</p>
  [code: wdth-not-100]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Check name table IDs 1, 2, 16, 17 to conform to Italic style. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.name.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>Name ID 17 (Typographic Subfamily Name) must contain 'Italic'.</p>
- [code: bad-typographicsubfamilyname]
 
 
 
@@ -118,7 +100,7 @@ These won't break the CI job for now, but will become effective after some time 
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 usWinAscent & usWinDescent. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
+    <summary>🔥 <b>FAIL</b> STAT table has Axis Value tables? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.stat.html#"></a></summary>
     <div>
 
 
@@ -127,44 +109,48 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 
-* 🔥 **FAIL** <p>OS/2.usWinAscent value should be equal or greater than 1167, but got 1163 instead</p>
- [code: ascent]
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
 
 
 
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Check name ID 25 to end with "Italic" for Italic VFs. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.metadata.html#"></a></summary>
-    <div>
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
 
 
 
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
 
 
 
-
-* 🔥 **FAIL** <p>Name ID 25 must end with &quot;Italic&quot; for Italic fonts.</p>
- [code: nameid25-missing-italic]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Checking file is named canonically. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#"></a></summary>
-    <div>
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
 
 
 
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
 
 
 
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
 
-* 🔥 **FAIL** <p>Expected &quot;Nigggli[wdth,wght].ttf. Got Nigggli-Italic[wdth,wght][wdth,wght].ttf.</p>
- [code: bad-filename]
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
+
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
+
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
 
 
 
@@ -194,22 +180,22 @@ These won't break the CI job for now, but will become effective after some time 
 <tr>
 <td align="left">Family Name</td>
 <td align="left"><strong>Nigggli Cond-Thin</strong></td>
-<td align="left"><strong>Nigggli UltraCondensed Thin</strong></td>
+<td align="left"><strong>Nigggli Thin</strong></td>
 </tr>
 <tr>
 <td align="left">Subfamily Name</td>
-<td align="left"><strong>Italic</strong></td>
-<td align="left"><strong>Regular</strong></td>
+<td align="left">Regular</td>
+<td align="left">Regular</td>
 </tr>
 <tr>
 <td align="left">Full Name</td>
 <td align="left"><strong>Nigggli Cond-Thin</strong></td>
-<td align="left"><strong>Nigggli UltraCondensed Thin</strong></td>
+<td align="left"><strong>Nigggli Thin</strong></td>
 </tr>
 <tr>
 <td align="left">Postscript Name</td>
 <td align="left"><strong>Nigggli-Cond-Thin</strong></td>
-<td align="left"><strong>Nigggli-UltraCondensedThin</strong></td>
+<td align="left"><strong>Nigggli-Thin</strong></td>
 </tr>
 <tr>
 <td align="left">Typographic Family Name</td>
@@ -219,11 +205,51 @@ These won't break the CI job for now, but will become effective after some time 
 <tr>
 <td align="left">Typographic Subfamily Name</td>
 <td align="left"><strong>Cond-Thin</strong></td>
-<td align="left"><strong>UltraCondensed Thin</strong></td>
+<td align="left"><strong>Thin</strong></td>
 </tr>
 </tbody>
 </table>
  [code: bad-names]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Validate defaults on fvar table match registered fallback names in GFAxisRegistry. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.axisregistry.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The defaul value wdth:60.0 is not registered as an axis fallback name on the Google Axis Registry.
+You should consider suggesting the addition of this value to the registry or adopted one of the existing fallback names for this axis:
+[name: &quot;SuperCondensed&quot;
+value: 25.0
+, name: &quot;UltraCondensed&quot;
+value: 50.0
+, name: &quot;ExtraCondensed&quot;
+value: 62.5
+, name: &quot;Condensed&quot;
+value: 75.0
+, name: &quot;SemiCondensed&quot;
+value: 87.5
+, name: &quot;Normal&quot;
+value: 100.0
+, name: &quot;SemiExpanded&quot;
+value: 112.5
+, name: &quot;Expanded&quot;
+value: 125.0
+, name: &quot;ExtraExpanded&quot;
+value: 150.0
+, name: &quot;UltraExpanded&quot;
+value: 200.0
+]</p>
+ [code: not-registered]
 
 
 
@@ -241,304 +267,11 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 0 start point differs in glyph 'gravecomb' between location wdth=200,wght=100 and location wdth=50,wght=900
-</code></pre>
- [code: interpolation-issues]
+<pre><code>- Contour 1 start point differs in glyph 'uni030C' between location wdth=140,wght=100 and location wdth=60,wght=900
 
+- Contour 0 start point differs in glyph 'acutecomb' between location wdth=140,wght=100 and location wdth=60,wght=900
 
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/shaping.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ ị̀ ị́ ị̂ ị̃ ị̄</p>
-<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̉ į̊ į̋ į̒ į̛̀ į̛́ į̛̂ į̛̃ į̛̄ į̛̆ į̛̇ į̛̈ į̛̉ į̛̊ į̛̋ į̛̌ į̛̒</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Avokaya (Latn, 100,000 speakers), Ekpeye (Latn, 226,000 speakers), Ebira (Latn, 2,200,000 speakers), Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Lugbara (Latn, 2,200,000 speakers), Sar (Latn, 500,000 speakers), Nateni (Latn, 100,000 speakers), Fur (Latn, 1,230,163 speakers), Bete-Bendi (Latn, 100,000 speakers), Nzakara (Latn, 50,000 speakers), Kom (Latn, 360,685 speakers), Southern Kisi (Latn, 360,000 speakers), Dan (Latn, 1,099,244 speakers), Belarusian (Cyrl, 10,064,517 speakers), Aghem (Latn, 38,843 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Navajo (Latn, 166,319 speakers), Bafut (Latn, 158,146 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Zapotec (Latn, 490,000 speakers), Vute (Latn, 21,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Koonzime (Latn, 40,000 speakers), Yala (Latn, 200,000 speakers), Dii (Latn, 71,000 speakers), Mundani (Latn, 34,000 speakers), Cicipu (Latn, 44,000 speakers), Makaa (Latn, 221,000 speakers), South Central Banda (Latn, 244,000 speakers), Ma’di (Latn, 584,000 speakers), Ejagham (Latn, 120,000 speakers), Gulay (Latn, 250,478 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Mfumte (Latn, 79,000 speakers), Mango (Latn, 77,000 speakers), Basaa (Latn, 332,940 speakers).</p>
- [code: soft-dotted]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.subsets.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The following codepoints supported by the font are not covered by
-any subsets defined in the font's metadata file, and will never
-be served. You can solve this by either manually adding additional
-subset declarations to METADATA.pb, or by editing the glyphset
-definitions.</p>
-<ul>
-<li>U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi</li>
-<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, tifinagh, cherokee</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tifinagh, malayalam, canadian-aboriginal, syriac, math, old-permic, tai-le</li>
-<li>U+030A COMBINING RING ABOVE: try adding syriac</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
-<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
-<li>U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition</li>
-<li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0326 COMBINING COMMA BELOW: not included in any glyphset definition</li>
-<li>U+0327 COMBINING CEDILLA: not included in any glyphset definition</li>
-<li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
-<li>U+2000 EN QUAD: not included in any glyphset definition</li>
-<li>U+2001 EM QUAD: not included in any glyphset definition</li>
-<li>U+2003 EM SPACE: try adding nushu</li>
-<li>U+2004 THREE-PER-EM SPACE: not included in any glyphset definition</li>
-<li>U+2005 FOUR-PER-EM SPACE: not included in any glyphset definition</li>
-<li>U+2006 SIX-PER-EM SPACE: not included in any glyphset definition</li>
-<li>U+2007 FIGURE SPACE: not included in any glyphset definition</li>
-<li>U+2008 PUNCTUATION SPACE: not included in any glyphset definition</li>
-<li>U+200A HAIR SPACE: not included in any glyphset definition</li>
-<li>U+200C ZERO WIDTH NON-JOINER: try adding one of: siddham, oriya, kaithi, limbu, rejang, takri, syriac, telugu, kayah-li, duployan, hanunoo, myanmar, warang-citi, hatran, sharada, thai, khudawadi, mongolian, chakma, sundanese, thaana, khojki, malayalam, hebrew, newa, sogdian, kannada, lepcha, new-tai-lue, hanifi-rohingya, pahawh-hmong, tagalog, mandaic, brahmi, tifinagh, tirhuta, buhid, kharoshthi, tai-viet, saurashtra, dogra, gunjala-gondi, khmer, gurmukhi, sinhala, tai-tham, syloti-nagri, avestan, buginese, grantha, mahajani, meetei-mayek, arabic, lao, zanabazar-square, tagbanwa, cham, tibetan, phags-pa, bhaiksuki, gujarati, modi, balinese, bengali, devanagari, manichaean, nko, batak, tamil, yi, psalter-pahlavi, javanese, masaram-gondi, tai-le</li>
-<li>U+200D ZERO WIDTH JOINER: try adding one of: siddham, oriya, kaithi, limbu, rejang, takri, syriac, telugu, kayah-li, duployan, hanunoo, myanmar, warang-citi, sharada, thai, old-hungarian, khudawadi, mongolian, chakma, sundanese, thaana, khojki, malayalam, hebrew, newa, sogdian, kannada, lepcha, new-tai-lue, hanifi-rohingya, pahawh-hmong, tagalog, mandaic, brahmi, tifinagh, tirhuta, buhid, kharoshthi, tai-viet, saurashtra, dogra, gunjala-gondi, khmer, gurmukhi, sinhala, tai-tham, syloti-nagri, avestan, buginese, grantha, mahajani, meetei-mayek, arabic, lao, zanabazar-square, tagbanwa, cham, tibetan, phags-pa, bhaiksuki, gujarati, modi, balinese, bengali, devanagari, manichaean, nko, batak, tamil, yi, psalter-pahlavi, javanese, masaram-gondi, tai-le</li>
-<li>U+200E LEFT-TO-RIGHT MARK: try adding one of: phags-pa, thaana, hebrew, syriac, nko, arabic</li>
-<li>U+200F RIGHT-TO-LEFT MARK: try adding one of: thaana, phags-pa, hebrew, syriac, nko</li>
-<li>U+202F NARROW NO-BREAK SPACE: try adding one of: mongolian, yi</li>
-<li>U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition</li>
-<li>U+25CC DOTTED CIRCLE: try adding one of: oriya, wancho, hanunoo, coptic, old-permic, marchen, lepcha, new-tai-lue, kharoshthi, gunjala-gondi, tai-tham, syloti-nagri, tagbanwa, cham, phags-pa, gujarati, devanagari, batak, yi, psalter-pahlavi, masaram-gondi, kaithi, limbu, takri, kayah-li, math, sharada, mongolian, chakma, sundanese, thaana, bassa-vah, ahom, malayalam, caucasian-albanian, kannada, symbols, elbasan, mandaic, tirhuta, sinhala, tibetan, balinese, manichaean, javanese, mende-kikakui, telugu, khojki, sogdian, hanifi-rohingya, miao, tagalog, tifinagh, brahmi, buhid, armenian, dogra, khmer, gurmukhi, buginese, meetei-mayek, grantha, lao, bhaiksuki, modi, siddham, adlam, rejang, music, syriac, warang-citi, duployan, myanmar, osage, thai, khudawadi, soyombo, hebrew, newa, pahawh-hmong, tai-viet, saurashtra, mahajani, zanabazar-square, canadian-aboriginal, bengali, nko, tamil, tai-le</li>
-<li>U+3000 IDEOGRAPHIC SPACE: try adding one of: chinese-simplified, phags-pa, nushu, japanese, chinese-traditional, yi, chinese-hongkong</li>
-</ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code>, <code>vietnamese</code></p>
- [code: unreachable-subsetting]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Is there kerning info for non-ligated sequences? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.gpos.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>GPOS table lacks kerning info for the following non-ligated sequences:</p>
-<pre><code>- f + f
-
-- f + i
-
-- f + l
-</code></pre>
- [code: lacks-kern-info]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Are there caret positions declared for every ligature? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.gdef.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>This font lacks caret position values for ligature glyphs on its GDEF table.</p>
- [code: lacks-caret-pos]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.meta.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>This font file does not have a 'meta' table.</p>
- [code: lacks-meta-table]
-
-
-
-</div>
-</details>
-</div>
-</details>
-
-<details><summary>[12] Nigggli[wdth,wght][wdth,wght].ttf</summary>
-<div>
-<details>
-    <summary>🔥 <b>FAIL</b> The variable font 'wdth' (Width) axis coordinate must be 100 on the 'Regular' instance. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.fvar.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>The &quot;wdth&quot; axis coordinate of the &quot;Regular&quot; instance must be 100. Got 50.0 as a default value instead.</p>
- [code: wdth-not-100]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to a name ID whose string is equal to the string of either name ID 2 or 17, and its postScriptNameID value is set to a name ID whose string is equal to the string of name ID 6. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.fvar.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>'Thin' instance has the same coordinates as the default instance; its subfamily name should be 'Cond-Thin'.</p>
-<p>Note: It is alternatively possible that Name ID 17 is incorrect, and should be set to the default instance subfamily name, 'Thin', rather than ''Cond-Thin''. If the default instance is 'Thin', NameID 17 is probably the problem.</p>
- [code: invalid-default-instance-subfamily-name]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 usWinAscent & usWinDescent. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2.usWinAscent value should be equal or greater than 1167, but got 1163 instead</p>
- [code: ascent]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Checking file is named canonically. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>Expected &quot;Nigggli[wdth,wght].ttf. Got Nigggli[wdth,wght][wdth,wght].ttf.</p>
- [code: bad-filename]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Check font names are correct <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>Font names are incorrect:</p>
-<table>
-<thead>
-<tr>
-<th align="left">nameID</th>
-<th align="left">current</th>
-<th align="left">expected</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Family Name</td>
-<td align="left"><strong>Nigggli Cond-Thin</strong></td>
-<td align="left"><strong>Nigggli UltraCondensed Thin</strong></td>
-</tr>
-<tr>
-<td align="left">Subfamily Name</td>
-<td align="left">Regular</td>
-<td align="left">Regular</td>
-</tr>
-<tr>
-<td align="left">Full Name</td>
-<td align="left"><strong>Nigggli Cond-Thin</strong></td>
-<td align="left"><strong>Nigggli UltraCondensed Thin</strong></td>
-</tr>
-<tr>
-<td align="left">Postscript Name</td>
-<td align="left"><strong>Nigggli-Cond-Thin</strong></td>
-<td align="left"><strong>Nigggli-UltraCondensedThin</strong></td>
-</tr>
-<tr>
-<td align="left">Typographic Family Name</td>
-<td align="left">Nigggli</td>
-<td align="left">Nigggli</td>
-</tr>
-<tr>
-<td align="left">Typographic Subfamily Name</td>
-<td align="left"><strong>Cond-Thin</strong></td>
-<td align="left"><strong>UltraCondensed Thin</strong></td>
-</tr>
-</tbody>
-</table>
- [code: bad-names]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Detect any interpolation issues in the font. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 0 start point differs in glyph 'gravecomb' between location wdth=200,wght=100 and location wdth=50,wght=900
-
-- Contour 0 start point differs in glyph 'acutecomb' between location wdth=200,wght=100 and location wdth=50,wght=900
+- Contour 0 start point differs in glyph 'gravecomb' between location wdth=140,wght=100 and location wdth=60,wght=900
 </code></pre>
  [code: interpolation-issues]
 
@@ -676,8 +409,6 @@ definitions.</p>
 
 * atilde (U+00E3): X=199.0,Y=799.0 (should be at cap-height 800?)
 
-* ae (U+00E6): X=619.0,Y=-0.5 (should be at baseline 0?)
-
 * uni1EC3 (U+1EC3): X=213.0,Y=975.0 (should be at ascender 976?)
 
 * uni1EBD (U+1EBD): X=211.0,Y=799.0 (should be at cap-height 800?)
@@ -745,8 +476,8 @@ definitions.</p>
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ ị̀ ị́ ị̂ ị̃ ị̄</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̉ į̊ į̋ į̒ į̛̀ į̛́ į̛̂ į̛̃ į̛̄ į̛̆ į̛̇ į̛̈ į̛̉ į̛̊ į̛̋ į̛̌ į̛̒</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Avokaya (Latn, 100,000 speakers), Ekpeye (Latn, 226,000 speakers), Ebira (Latn, 2,200,000 speakers), Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Lugbara (Latn, 2,200,000 speakers), Sar (Latn, 500,000 speakers), Nateni (Latn, 100,000 speakers), Fur (Latn, 1,230,163 speakers), Bete-Bendi (Latn, 100,000 speakers), Nzakara (Latn, 50,000 speakers), Kom (Latn, 360,685 speakers), Southern Kisi (Latn, 360,000 speakers), Dan (Latn, 1,099,244 speakers), Belarusian (Cyrl, 10,064,517 speakers), Aghem (Latn, 38,843 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Navajo (Latn, 166,319 speakers), Bafut (Latn, 158,146 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Zapotec (Latn, 490,000 speakers), Vute (Latn, 21,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Koonzime (Latn, 40,000 speakers), Yala (Latn, 200,000 speakers), Dii (Latn, 71,000 speakers), Mundani (Latn, 34,000 speakers), Cicipu (Latn, 44,000 speakers), Makaa (Latn, 221,000 speakers), South Central Banda (Latn, 244,000 speakers), Ma’di (Latn, 584,000 speakers), Ejagham (Latn, 120,000 speakers), Gulay (Latn, 250,478 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Mfumte (Latn, 79,000 speakers), Mango (Latn, 77,000 speakers), Basaa (Latn, 332,940 speakers).</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Avokaya (Latn, 100,000 speakers), Ebira (Latn, 2,200,000 speakers), Igbo (Latn, 27,823,640 speakers), Ekpeye (Latn, 226,000 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Nzakara (Latn, 50,000 speakers), Sar (Latn, 500,000 speakers), Gulay (Latn, 250,478 speakers), Dii (Latn, 71,000 speakers), South Central Banda (Latn, 244,000 speakers), Ma’di (Latn, 584,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Mango (Latn, 77,000 speakers), Fur (Latn, 1,230,163 speakers), Koonzime (Latn, 40,000 speakers), Vute (Latn, 21,000 speakers), Mfumte (Latn, 79,000 speakers), Cicipu (Latn, 44,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Mundani (Latn, 34,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Lugbara (Latn, 2,200,000 speakers), Yala (Latn, 200,000 speakers), Bafut (Latn, 158,146 speakers), Ejagham (Latn, 120,000 speakers), Navajo (Latn, 166,319 speakers), Kom (Latn, 360,685 speakers), Dan (Latn, 1,099,244 speakers), Aghem (Latn, 38,843 speakers), Nateni (Latn, 100,000 speakers), Makaa (Latn, 221,000 speakers), Zapotec (Latn, 490,000 speakers), Southern Kisi (Latn, 360,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -771,15 +502,15 @@ subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
 <li>U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi</li>
-<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, tifinagh, cherokee</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, math, coptic</li>
 <li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tifinagh, malayalam, canadian-aboriginal, syriac, math, old-permic, tai-le</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: math, tai-le, old-permic, tifinagh, coptic, syriac, malayalam, canadian-aboriginal</li>
 <li>U+030A COMBINING RING ABOVE: try adding syriac</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
@@ -795,14 +526,427 @@ definitions.</p>
 <li>U+2007 FIGURE SPACE: not included in any glyphset definition</li>
 <li>U+2008 PUNCTUATION SPACE: not included in any glyphset definition</li>
 <li>U+200A HAIR SPACE: not included in any glyphset definition</li>
-<li>U+200C ZERO WIDTH NON-JOINER: try adding one of: siddham, oriya, kaithi, limbu, rejang, takri, syriac, telugu, kayah-li, duployan, hanunoo, myanmar, warang-citi, hatran, sharada, thai, khudawadi, mongolian, chakma, sundanese, thaana, khojki, malayalam, hebrew, newa, sogdian, kannada, lepcha, new-tai-lue, hanifi-rohingya, pahawh-hmong, tagalog, mandaic, brahmi, tifinagh, tirhuta, buhid, kharoshthi, tai-viet, saurashtra, dogra, gunjala-gondi, khmer, gurmukhi, sinhala, tai-tham, syloti-nagri, avestan, buginese, grantha, mahajani, meetei-mayek, arabic, lao, zanabazar-square, tagbanwa, cham, tibetan, phags-pa, bhaiksuki, gujarati, modi, balinese, bengali, devanagari, manichaean, nko, batak, tamil, yi, psalter-pahlavi, javanese, masaram-gondi, tai-le</li>
-<li>U+200D ZERO WIDTH JOINER: try adding one of: siddham, oriya, kaithi, limbu, rejang, takri, syriac, telugu, kayah-li, duployan, hanunoo, myanmar, warang-citi, sharada, thai, old-hungarian, khudawadi, mongolian, chakma, sundanese, thaana, khojki, malayalam, hebrew, newa, sogdian, kannada, lepcha, new-tai-lue, hanifi-rohingya, pahawh-hmong, tagalog, mandaic, brahmi, tifinagh, tirhuta, buhid, kharoshthi, tai-viet, saurashtra, dogra, gunjala-gondi, khmer, gurmukhi, sinhala, tai-tham, syloti-nagri, avestan, buginese, grantha, mahajani, meetei-mayek, arabic, lao, zanabazar-square, tagbanwa, cham, tibetan, phags-pa, bhaiksuki, gujarati, modi, balinese, bengali, devanagari, manichaean, nko, batak, tamil, yi, psalter-pahlavi, javanese, masaram-gondi, tai-le</li>
-<li>U+200E LEFT-TO-RIGHT MARK: try adding one of: phags-pa, thaana, hebrew, syriac, nko, arabic</li>
-<li>U+200F RIGHT-TO-LEFT MARK: try adding one of: thaana, phags-pa, hebrew, syriac, nko</li>
+<li>U+200C ZERO WIDTH NON-JOINER: try adding one of: avestan, saurashtra, zanabazar-square, dogra, sundanese, lepcha, batak, manichaean, thaana, bengali, bhaiksuki, malayalam, buginese, hatran, balinese, khmer, kayah-li, myanmar, modi, newa, telugu, hanunoo, tai-viet, warang-citi, tagalog, kharoshthi, limbu, lao, psalter-pahlavi, takri, arabic, kaithi, buhid, kannada, grantha, syriac, javanese, sinhala, tamil, chakma, meetei-mayek, new-tai-lue, duployan, gunjala-gondi, sogdian, mandaic, yi, oriya, khojki, phags-pa, thai, siddham, khudawadi, masaram-gondi, mongolian, tai-tham, nko, tai-le, tirhuta, brahmi, hebrew, pahawh-hmong, rejang, mahajani, sharada, tifinagh, tagbanwa, syloti-nagri, gurmukhi, hanifi-rohingya, cham, tibetan, gujarati, devanagari</li>
+<li>U+200D ZERO WIDTH JOINER: try adding one of: avestan, old-hungarian, saurashtra, zanabazar-square, dogra, sundanese, lepcha, batak, manichaean, thaana, bengali, bhaiksuki, malayalam, buginese, balinese, khmer, kayah-li, myanmar, modi, newa, telugu, hanunoo, tai-viet, warang-citi, tagalog, kharoshthi, limbu, lao, psalter-pahlavi, takri, arabic, kaithi, buhid, kannada, grantha, syriac, javanese, sinhala, tamil, chakma, meetei-mayek, new-tai-lue, duployan, gunjala-gondi, sogdian, mandaic, yi, oriya, khojki, phags-pa, thai, siddham, khudawadi, masaram-gondi, mongolian, tai-tham, nko, tai-le, tirhuta, brahmi, hebrew, pahawh-hmong, rejang, mahajani, sharada, tifinagh, tagbanwa, syloti-nagri, gurmukhi, hanifi-rohingya, cham, tibetan, gujarati, devanagari</li>
+<li>U+200E LEFT-TO-RIGHT MARK: try adding one of: nko, hebrew, syriac, arabic, thaana, phags-pa</li>
+<li>U+200F RIGHT-TO-LEFT MARK: try adding one of: nko, hebrew, syriac, thaana, phags-pa</li>
 <li>U+202F NARROW NO-BREAK SPACE: try adding one of: mongolian, yi</li>
 <li>U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition</li>
-<li>U+25CC DOTTED CIRCLE: try adding one of: oriya, wancho, hanunoo, coptic, old-permic, marchen, lepcha, new-tai-lue, kharoshthi, gunjala-gondi, tai-tham, syloti-nagri, tagbanwa, cham, phags-pa, gujarati, devanagari, batak, yi, psalter-pahlavi, masaram-gondi, kaithi, limbu, takri, kayah-li, math, sharada, mongolian, chakma, sundanese, thaana, bassa-vah, ahom, malayalam, caucasian-albanian, kannada, symbols, elbasan, mandaic, tirhuta, sinhala, tibetan, balinese, manichaean, javanese, mende-kikakui, telugu, khojki, sogdian, hanifi-rohingya, miao, tagalog, tifinagh, brahmi, buhid, armenian, dogra, khmer, gurmukhi, buginese, meetei-mayek, grantha, lao, bhaiksuki, modi, siddham, adlam, rejang, music, syriac, warang-citi, duployan, myanmar, osage, thai, khudawadi, soyombo, hebrew, newa, pahawh-hmong, tai-viet, saurashtra, mahajani, zanabazar-square, canadian-aboriginal, bengali, nko, tamil, tai-le</li>
-<li>U+3000 IDEOGRAPHIC SPACE: try adding one of: chinese-simplified, phags-pa, nushu, japanese, chinese-traditional, yi, chinese-hongkong</li>
+<li>U+25CC DOTTED CIRCLE: try adding one of: dogra, myanmar, telugu, warang-citi, soyombo, hanunoo, caucasian-albanian, limbu, syriac, buhid, javanese, tamil, miao, marchen, tifinagh, pahawh-hmong, rejang, syloti-nagri, elbasan, gurmukhi, cham, sundanese, bhaiksuki, newa, modi, psalter-pahlavi, symbols, meetei-mayek, duployan, sogdian, mandaic, oriya, mende-kikakui, phags-pa, thai, siddham, mongolian, tai-le, brahmi, mahajani, hanifi-rohingya, gujarati, saurashtra, bassa-vah, lepcha, bengali, malayalam, buginese, balinese, khmer, canadian-aboriginal, tai-viet, tagalog, kharoshthi, lao, takri, kaithi, kannada, sinhala, gunjala-gondi, coptic, yi, khojki, khudawadi, tirhuta, hebrew, sharada, ahom, tagbanwa, music, tai-tham, devanagari, zanabazar-square, thaana, batak, manichaean, kayah-li, grantha, wancho, chakma, new-tai-lue, osage, armenian, math, adlam, masaram-gondi, nko, old-permic, tibetan</li>
+<li>U+3000 IDEOGRAPHIC SPACE: try adding one of: nushu, japanese, chinese-traditional, chinese-hongkong, chinese-simplified, yi, phags-pa</li>
+</ul>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code>, <code>vietnamese</code></p>
+ [code: unreachable-subsetting]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Is there kerning info for non-ligated sequences? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.gpos.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>GPOS table lacks kerning info for the following non-ligated sequences:</p>
+<pre><code>- f + f
+
+- f + i
+
+- f + l
+</code></pre>
+ [code: lacks-kern-info]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Are there caret positions declared for every ligature? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.gdef.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>This font lacks caret position values for ligature glyphs on its GDEF table.</p>
+ [code: lacks-caret-pos]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.meta.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>This font file does not have a 'meta' table.</p>
+ [code: lacks-meta-table]
+
+
+
+</div>
+</details>
+</div>
+</details>
+
+<details><summary>[14] Nigggli-Italic[wdth,wght].ttf</summary>
+<div>
+<details>
+    <summary>🔥 <b>FAIL</b> The variable font 'wdth' (Width) axis coordinate must be 100 on the 'Regular' instance. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.fvar.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The &quot;wdth&quot; axis coordinate of the &quot;Regular&quot; instance must be 100. Got 60.0 as a default value instead.</p>
+ [code: wdth-not-100]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Check name table IDs 1, 2, 16, 17 to conform to Italic style. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.name.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>Name ID 17 (Typographic Subfamily Name) must contain 'Italic'.</p>
+ [code: bad-typographicsubfamilyname]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to a name ID whose string is equal to the string of either name ID 2 or 17, and its postScriptNameID value is set to a name ID whose string is equal to the string of name ID 6. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.fvar.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>'Thin' instance has the same coordinates as the default instance; its subfamily name should be 'Cond-Thin Ita'.</p>
+<p>Note: It is alternatively possible that Name ID 17 is incorrect, and should be set to the default instance subfamily name, 'Thin', rather than ''Cond-Thin Ita''. If the default instance is 'Thin', NameID 17 is probably the problem.</p>
+ [code: invalid-default-instance-subfamily-name]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> STAT table has Axis Value tables? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.stat.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
+
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
+
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
+
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
+
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
+
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
+
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
+
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
+
+
+
+* 🔥 **FAIL** <p>STAT table is missing Axis Value for 'wdth' value '60.0'</p>
+ [code: missing-axis-value-table]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Check name ID 25 to end with "Italic" for Italic VFs. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.metadata.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>Name ID 25 must end with &quot;Italic&quot; for Italic fonts.</p>
+ [code: nameid25-missing-italic]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Checking file is named canonically. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>Expected &quot;Nigggli[wdth,wght].ttf. Got Nigggli-Italic[wdth,wght].ttf.</p>
+ [code: bad-filename]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Check font names are correct <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>Font names are incorrect:</p>
+<table>
+<thead>
+<tr>
+<th align="left">nameID</th>
+<th align="left">current</th>
+<th align="left">expected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Family Name</td>
+<td align="left"><strong>Nigggli Cond-Thin Ita</strong></td>
+<td align="left"><strong>Nigggli Thin</strong></td>
+</tr>
+<tr>
+<td align="left">Subfamily Name</td>
+<td align="left"><strong>Italic</strong></td>
+<td align="left"><strong>Regular</strong></td>
+</tr>
+<tr>
+<td align="left">Full Name</td>
+<td align="left"><strong>Nigggli Cond-Thin Ita</strong></td>
+<td align="left"><strong>Nigggli Thin</strong></td>
+</tr>
+<tr>
+<td align="left">Postscript Name</td>
+<td align="left"><strong>Nigggli-Cond-ThinIta</strong></td>
+<td align="left"><strong>Nigggli-Thin</strong></td>
+</tr>
+<tr>
+<td align="left">Typographic Family Name</td>
+<td align="left">Nigggli</td>
+<td align="left">Nigggli</td>
+</tr>
+<tr>
+<td align="left">Typographic Subfamily Name</td>
+<td align="left"><strong>Cond-Thin Ita</strong></td>
+<td align="left"><strong>Thin</strong></td>
+</tr>
+</tbody>
+</table>
+ [code: bad-names]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Validate defaults on fvar table match registered fallback names in GFAxisRegistry. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.axisregistry.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The defaul value wdth:60.0 is not registered as an axis fallback name on the Google Axis Registry.
+You should consider suggesting the addition of this value to the registry or adopted one of the existing fallback names for this axis:
+[name: &quot;SuperCondensed&quot;
+value: 25.0
+, name: &quot;UltraCondensed&quot;
+value: 50.0
+, name: &quot;ExtraCondensed&quot;
+value: 62.5
+, name: &quot;Condensed&quot;
+value: 75.0
+, name: &quot;SemiCondensed&quot;
+value: 87.5
+, name: &quot;Normal&quot;
+value: 100.0
+, name: &quot;SemiExpanded&quot;
+value: 112.5
+, name: &quot;Expanded&quot;
+value: 125.0
+, name: &quot;ExtraExpanded&quot;
+value: 150.0
+, name: &quot;UltraExpanded&quot;
+value: 200.0
+]</p>
+ [code: not-registered]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Detect any interpolation issues in the font. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
+<pre><code>- Contour 0 start point differs in glyph 'uni030C' between location wdth=140,wght=100 and location wdth=60,wght=900
+
+- Contour 0 start point differs in glyph 'gravecomb' between location wdth=140,wght=100 and location wdth=60,wght=900
+</code></pre>
+ [code: interpolation-issues]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/shaping.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ ị̀ ị́ ị̂ ị̃ ị̄</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̉ į̊ į̋ į̒ į̛̀ į̛́ į̛̂ į̛̃ į̛̄ į̛̆ į̛̇ į̛̈ į̛̉ į̛̊ į̛̋ į̛̌ į̛̒</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Avokaya (Latn, 100,000 speakers), Ebira (Latn, 2,200,000 speakers), Igbo (Latn, 27,823,640 speakers), Ekpeye (Latn, 226,000 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Nzakara (Latn, 50,000 speakers), Sar (Latn, 500,000 speakers), Gulay (Latn, 250,478 speakers), Dii (Latn, 71,000 speakers), South Central Banda (Latn, 244,000 speakers), Ma’di (Latn, 584,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Mango (Latn, 77,000 speakers), Fur (Latn, 1,230,163 speakers), Koonzime (Latn, 40,000 speakers), Vute (Latn, 21,000 speakers), Mfumte (Latn, 79,000 speakers), Cicipu (Latn, 44,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Mundani (Latn, 34,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Lugbara (Latn, 2,200,000 speakers), Yala (Latn, 200,000 speakers), Bafut (Latn, 158,146 speakers), Ejagham (Latn, 120,000 speakers), Navajo (Latn, 166,319 speakers), Kom (Latn, 360,685 speakers), Dan (Latn, 1,099,244 speakers), Aghem (Latn, 38,843 speakers), Nateni (Latn, 100,000 speakers), Makaa (Latn, 221,000 speakers), Zapotec (Latn, 490,000 speakers), Southern Kisi (Latn, 360,000 speakers).</p>
+ [code: soft-dotted]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.subsets.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following codepoints supported by the font are not covered by
+any subsets defined in the font's metadata file, and will never
+be served. You can solve this by either manually adding additional
+subset declarations to METADATA.pb, or by editing the glyphset
+definitions.</p>
+<ul>
+<li>U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi</li>
+<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, math, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: math, tai-le, old-permic, tifinagh, coptic, syriac, malayalam, canadian-aboriginal</li>
+<li>U+030A COMBINING RING ABOVE: try adding syriac</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
+<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
+<li>U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition</li>
+<li>U+031B COMBINING HORN: not included in any glyphset definition</li>
+<li>U+0326 COMBINING COMMA BELOW: not included in any glyphset definition</li>
+<li>U+0327 COMBINING CEDILLA: not included in any glyphset definition</li>
+<li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
+<li>U+2000 EN QUAD: not included in any glyphset definition</li>
+<li>U+2001 EM QUAD: not included in any glyphset definition</li>
+<li>U+2003 EM SPACE: try adding nushu</li>
+<li>U+2004 THREE-PER-EM SPACE: not included in any glyphset definition</li>
+<li>U+2005 FOUR-PER-EM SPACE: not included in any glyphset definition</li>
+<li>U+2006 SIX-PER-EM SPACE: not included in any glyphset definition</li>
+<li>U+2007 FIGURE SPACE: not included in any glyphset definition</li>
+<li>U+2008 PUNCTUATION SPACE: not included in any glyphset definition</li>
+<li>U+200A HAIR SPACE: not included in any glyphset definition</li>
+<li>U+200C ZERO WIDTH NON-JOINER: try adding one of: avestan, saurashtra, zanabazar-square, dogra, sundanese, lepcha, batak, manichaean, thaana, bengali, bhaiksuki, malayalam, buginese, hatran, balinese, khmer, kayah-li, myanmar, modi, newa, telugu, hanunoo, tai-viet, warang-citi, tagalog, kharoshthi, limbu, lao, psalter-pahlavi, takri, arabic, kaithi, buhid, kannada, grantha, syriac, javanese, sinhala, tamil, chakma, meetei-mayek, new-tai-lue, duployan, gunjala-gondi, sogdian, mandaic, yi, oriya, khojki, phags-pa, thai, siddham, khudawadi, masaram-gondi, mongolian, tai-tham, nko, tai-le, tirhuta, brahmi, hebrew, pahawh-hmong, rejang, mahajani, sharada, tifinagh, tagbanwa, syloti-nagri, gurmukhi, hanifi-rohingya, cham, tibetan, gujarati, devanagari</li>
+<li>U+200D ZERO WIDTH JOINER: try adding one of: avestan, old-hungarian, saurashtra, zanabazar-square, dogra, sundanese, lepcha, batak, manichaean, thaana, bengali, bhaiksuki, malayalam, buginese, balinese, khmer, kayah-li, myanmar, modi, newa, telugu, hanunoo, tai-viet, warang-citi, tagalog, kharoshthi, limbu, lao, psalter-pahlavi, takri, arabic, kaithi, buhid, kannada, grantha, syriac, javanese, sinhala, tamil, chakma, meetei-mayek, new-tai-lue, duployan, gunjala-gondi, sogdian, mandaic, yi, oriya, khojki, phags-pa, thai, siddham, khudawadi, masaram-gondi, mongolian, tai-tham, nko, tai-le, tirhuta, brahmi, hebrew, pahawh-hmong, rejang, mahajani, sharada, tifinagh, tagbanwa, syloti-nagri, gurmukhi, hanifi-rohingya, cham, tibetan, gujarati, devanagari</li>
+<li>U+200E LEFT-TO-RIGHT MARK: try adding one of: nko, hebrew, syriac, arabic, thaana, phags-pa</li>
+<li>U+200F RIGHT-TO-LEFT MARK: try adding one of: nko, hebrew, syriac, thaana, phags-pa</li>
+<li>U+202F NARROW NO-BREAK SPACE: try adding one of: mongolian, yi</li>
+<li>U+205F MEDIUM MATHEMATICAL SPACE: not included in any glyphset definition</li>
+<li>U+25CC DOTTED CIRCLE: try adding one of: dogra, myanmar, telugu, warang-citi, soyombo, hanunoo, caucasian-albanian, limbu, syriac, buhid, javanese, tamil, miao, marchen, tifinagh, pahawh-hmong, rejang, syloti-nagri, elbasan, gurmukhi, cham, sundanese, bhaiksuki, newa, modi, psalter-pahlavi, symbols, meetei-mayek, duployan, sogdian, mandaic, oriya, mende-kikakui, phags-pa, thai, siddham, mongolian, tai-le, brahmi, mahajani, hanifi-rohingya, gujarati, saurashtra, bassa-vah, lepcha, bengali, malayalam, buginese, balinese, khmer, canadian-aboriginal, tai-viet, tagalog, kharoshthi, lao, takri, kaithi, kannada, sinhala, gunjala-gondi, coptic, yi, khojki, khudawadi, tirhuta, hebrew, sharada, ahom, tagbanwa, music, tai-tham, devanagari, zanabazar-square, thaana, batak, manichaean, kayah-li, grantha, wancho, chakma, new-tai-lue, osage, armenian, math, adlam, masaram-gondi, nko, old-permic, tibetan</li>
+<li>U+3000 IDEOGRAPHIC SPACE: try adding one of: nushu, japanese, chinese-traditional, chinese-hongkong, chinese-simplified, yi, phags-pa</li>
 </ul>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code>, <code>vietnamese</code></p>
  [code: unreachable-subsetting]
@@ -886,12 +1030,12 @@ definitions.</p>
 
 
 
-* 🔥 **FAIL** <p>Font Nigggli[wdth,wght][wdth,wght].ttf is missing an 'ital' axis.</p>
+* 🔥 **FAIL** <p>Font Nigggli[wdth,wght].ttf is missing an 'ital' axis.</p>
  [code: missing-ital-axis]
 
 
 
-* 🔥 **FAIL** <p>Font Nigggli-Italic[wdth,wght][wdth,wght].ttf is missing an 'ital' axis.</p>
+* 🔥 **FAIL** <p>Font Nigggli-Italic[wdth,wght].ttf is missing an 'ital' axis.</p>
  [code: missing-ital-axis]
 
 
@@ -908,7 +1052,7 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 13 | 15 | 193 | 15 | 250 | 0 | 
+| 0 | 0 | 14 | 15 | 193 | 15 | 249 | 0 | 
 | 0% | 0% | 3% | 3% | 40% | 3% | 51% | 0% | 
 
 

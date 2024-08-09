@@ -5,12 +5,12 @@
 # First we need to define the source files to build. Please list
 # all sources in the same family. These are expected to be in the
 # sources/ directory, so all paths should be relative to that
-# directory.
+# directory.   
 sources:
-  - Nigggli[wdth,wght].glyphs
-#  - Nigggli-Italic[wdth,wght].glyphs
+  - Nigggli.glyphs
+  - Nigggli-Italic.glyphs
 # You don't have to supply the family name, but builds are slightly
-# faster if you do.
+# faster if you do. 
 familyName: "Nigggli"
 
 # Next you can supply alternative paths for where you want the
@@ -26,7 +26,7 @@ familyName: "Nigggli"
 # The following entries, which are either "true" or "false"
 # determine which targets to build. We turn off OTFs for this demo.
 
-# buildVariable: true
+buildVariable: true
 # buildStatic: true
 # buildTTF: true
 buildOTF: false

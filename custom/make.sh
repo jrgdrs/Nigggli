@@ -1,5 +1,6 @@
 
 #gftools builder sources/config.yaml 
+#gftools builder sources/config-italic.yaml 
 
 cd custom
 ln -sfn ../fonts fonts
