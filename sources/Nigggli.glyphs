@@ -1,5 +1,5 @@
 {
-.appVersion = "3315";
+.appVersion = "3316";
 .formatVersion = 3;
 axes = (
 {
@@ -63087,7 +63087,7 @@ instanceInterpolations = {
 m002 = 0.4125;
 m01 = 0.5875;
 };
-name = Condensed;
+name = "Condensed Regular";
 widthClass = 3;
 },
 {

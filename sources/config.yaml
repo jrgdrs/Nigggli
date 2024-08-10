@@ -91,10 +91,11 @@ buildOTF: false
 axisOrder:
   - wght
   - wdth
+  - ital
 
 # sources:
 #   - Wittgenstein.glyphs
 #   - Wittgenstein-Italic.glyphs
-# familyName: Wittgenstein
+# familyName: Wittgenstein  
 # buildVariable: true
 
