@@ -13,8 +13,7 @@ if( process.argv[4] == undefined ){
 } 
 var FONTFILE = "../" + process.argv[3]; //fonts/ttf/Wittgenstein-SemiBoldItalic.ttf";
 
-console.log( "print " + INFILE + " " + FONTFILE + " " + PNGFILE + " "  );
-//console.log( "output to", PDFFILE );
+console.log( "  node printImage.js " + INFILE + " " + FONTFILE + " " + PNGFILE  );
 
 ( async () => {
     const browser = await puppeteer.launch();
@@ -30,7 +29,7 @@ console.log( "print " + INFILE + " " + FONTFILE + " " + PNGFILE + " "  );
             const MY_HASH = execSync("git rev-parse --short HEAD").toString().trim();
             const FONT_NAME = font.names.fullName.en;
             const FONT_VERSION = `v${font.tables.head.fontRevision.toFixed(3)}`;
-            console.log (MY_URL,MY_HASH, FONT_NAME, FONT_VERSION );
+            console.log (" ", MY_URL,MY_HASH, FONT_NAME, FONT_VERSION );
 
             //        .fontname::before{ content: "Fontname"; } 
             await page.addStyleTag({content: '.MY_URL::before{ content: "' + MY_URL + ' at commit ' + MY_HASH + '"; }'})

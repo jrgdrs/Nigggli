@@ -1,0 +1,540 @@
+# buildVariable: Build a variable font from a source file
+rule buildVariable
+  command = /Users/jdrees/github/GlobalVenv/venv/bin/python3.12 -m $
+      gftools.builder.jobrunner fontmake --output-path $out -o variable $
+      $fontmake_type $in $args $stamp
+  description = buildVariable
+
+# fix: Run gftools-fix
+rule fix
+  command = /Users/jdrees/github/GlobalVenv/venv/bin/python3.12 -m $
+      gftools.builder.jobrunner gftools-fix-font -o $out $args $in $stamp
+  description = fix
+
+# buildStat: Build a STAT table from one or more source files
+rule buildSTAT-operation
+  command = gftools-gen-stat --out $tempdir $args -- $in && mv $finalfile $
+      $out $stamp
+rule buildSTAT-postprocess
+  command = gftools-gen-stat --inplace $args -- $in $stamp
+
+# compress: Compress to webfont
+rule compress
+  command = /Users/jdrees/github/GlobalVenv/venv/bin/python3.12 -m $
+      gftools.builder.jobrunner fonttools ttLib.woff2 compress -o $out $in $
+      $stamp
+  description = compress
+
+# instantiateUfo: Create instance UFOs from a Glyphs or designspace file
+rule instantiateUfo
+  command = /Users/jdrees/github/GlobalVenv/venv/bin/python3.12 -m $
+      gftools.builder.jobrunner fontmake -i "$instance_name" -o ufo $
+      $fontmake_type $in $args $stamp
+  description = instantiateUfo
+
+# buildTTF: Build a TTF from a source file
+rule buildTTF
+  command = /Users/jdrees/github/GlobalVenv/venv/bin/python3.12 -m $
+      gftools.builder.jobrunner fontmake --output-path $out -o ttf $
+      $fontmake_type $in $args $stamp
+  description = buildTTF
+
+# autohint: Run gftools-autohint
+rule autohint
+  command = /Users/jdrees/github/GlobalVenv/venv/bin/python3.12 -m $
+      gftools.builder.jobrunner gftools-autohint $args -o $out $in $stamp
+  description = autohint
+
+# copy: Copy a file
+rule copy
+  command = /Users/jdrees/github/GlobalVenv/venv/bin/python3.12 -m $
+      gftools.builder.jobrunner cp $in $out $stamp
+  description = copy
+
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpd0lsi5es
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpd0lsi5es: $
+    buildVariable Nigggli.glyphs
+  operation = buildVariable
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+# Generating instance_ufos/NigggliCondensed-Light.ufo.json
+build instance_ufos/NigggliCondensed-Light.ufo.json: instantiateUfo $
+    Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Condensed Light
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/NigggliCondensed-Regular.ufo.json
+build instance_ufos/NigggliCondensed-Regular.ufo.json: instantiateUfo $
+    Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Condensed Regular
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/NigggliCondensed-SemiBold.ufo.json
+build instance_ufos/NigggliCondensed-SemiBold.ufo.json: instantiateUfo $
+    Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Condensed SemiBold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/NigggliCondensed-Bold.ufo.json
+build instance_ufos/NigggliCondensed-Bold.ufo.json: instantiateUfo $
+    Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Condensed Bold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Nigggli-Light.ufo.json
+build instance_ufos/Nigggli-Light.ufo.json: instantiateUfo Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Light
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Nigggli-Book.ufo.json
+build instance_ufos/Nigggli-Book.ufo.json: instantiateUfo Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Book
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Nigggli-Regular.ufo.json
+build instance_ufos/Nigggli-Regular.ufo.json: instantiateUfo Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Regular
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Nigggli-SemiBold.ufo.json
+build instance_ufos/Nigggli-SemiBold.ufo.json: instantiateUfo Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli SemiBold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Nigggli-Bold.ufo.json
+build instance_ufos/Nigggli-Bold.ufo.json: instantiateUfo Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Bold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Nigggli-ExtraBold.ufo.json
+build instance_ufos/Nigggli-ExtraBold.ufo.json: instantiateUfo Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli ExtraBold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/NigggliExtended-Light.ufo.json
+build instance_ufos/NigggliExtended-Light.ufo.json: instantiateUfo $
+    Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Extended Light
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/NigggliExtended-Regular.ufo.json
+build instance_ufos/NigggliExtended-Regular.ufo.json: instantiateUfo $
+    Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Extended Regular
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/NigggliExtended-SemiBold.ufo.json
+build instance_ufos/NigggliExtended-SemiBold.ufo.json: instantiateUfo $
+    Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Extended SemiBold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/NigggliExtended-Bold.ufo.json
+build instance_ufos/NigggliExtended-Bold.ufo.json: instantiateUfo $
+    Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Extended Bold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/NigggliExtended-ExtraBold.ufo.json
+build instance_ufos/NigggliExtended-ExtraBold.ufo.json: instantiateUfo $
+    Nigggli.glyphs
+  operation = instantiateUfo
+  instance_name = Nigggli Extended ExtraBold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Postprocessing  with BuildSTAT
+build $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmph10dd0m4.buildStatstamp: $
+    buildSTAT-postprocess ../fonts/variable/Nigggli[wdth,wght].ttf | $
+    ../fonts/variable/Nigggli[wdth,wght].ttf
+  stamp =  && touch $
+      /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmph10dd0m4.buildStatstamp
+  postprocess = buildStat
+# Generating ../fonts/webfonts/Nigggli[wdth,wght].woff2
+build ../fonts/webfonts/Nigggli[wdth,wght].woff2: compress $
+    ../fonts/variable/Nigggli[wdth,wght].ttf
+  operation = compress
+# Generating ../fonts/webfonts/NigggliCondensed-Light.woff2
+build ../fonts/webfonts/NigggliCondensed-Light.woff2: compress $
+    ../fonts/ttf/NigggliCondensed-Light.ttf
+  operation = compress
+# Generating ../fonts/webfonts/NigggliCondensed-Regular.woff2
+build ../fonts/webfonts/NigggliCondensed-Regular.woff2: compress $
+    ../fonts/ttf/NigggliCondensed-Regular.ttf
+  operation = compress
+# Generating ../fonts/webfonts/NigggliCondensed-SemiBold.woff2
+build ../fonts/webfonts/NigggliCondensed-SemiBold.woff2: compress $
+    ../fonts/ttf/NigggliCondensed-SemiBold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/NigggliCondensed-Bold.woff2
+build ../fonts/webfonts/NigggliCondensed-Bold.woff2: compress $
+    ../fonts/ttf/NigggliCondensed-Bold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Nigggli-Light.woff2
+build ../fonts/webfonts/Nigggli-Light.woff2: compress $
+    ../fonts/ttf/Nigggli-Light.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Nigggli-Book.woff2
+build ../fonts/webfonts/Nigggli-Book.woff2: compress $
+    ../fonts/ttf/Nigggli-Book.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Nigggli-Regular.woff2
+build ../fonts/webfonts/Nigggli-Regular.woff2: compress $
+    ../fonts/ttf/Nigggli-Regular.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Nigggli-SemiBold.woff2
+build ../fonts/webfonts/Nigggli-SemiBold.woff2: compress $
+    ../fonts/ttf/Nigggli-SemiBold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Nigggli-Bold.woff2
+build ../fonts/webfonts/Nigggli-Bold.woff2: compress $
+    ../fonts/ttf/Nigggli-Bold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Nigggli-ExtraBold.woff2
+build ../fonts/webfonts/Nigggli-ExtraBold.woff2: compress $
+    ../fonts/ttf/Nigggli-ExtraBold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/NigggliExtended-Light.woff2
+build ../fonts/webfonts/NigggliExtended-Light.woff2: compress $
+    ../fonts/ttf/NigggliExtended-Light.ttf
+  operation = compress
+# Generating ../fonts/webfonts/NigggliExtended-Regular.woff2
+build ../fonts/webfonts/NigggliExtended-Regular.woff2: compress $
+    ../fonts/ttf/NigggliExtended-Regular.ttf
+  operation = compress
+# Generating ../fonts/webfonts/NigggliExtended-SemiBold.woff2
+build ../fonts/webfonts/NigggliExtended-SemiBold.woff2: compress $
+    ../fonts/ttf/NigggliExtended-SemiBold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/NigggliExtended-Bold.woff2
+build ../fonts/webfonts/NigggliExtended-Bold.woff2: compress $
+    ../fonts/ttf/NigggliExtended-Bold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/NigggliExtended-ExtraBold.woff2
+build ../fonts/webfonts/NigggliExtended-ExtraBold.woff2: compress $
+    ../fonts/ttf/NigggliExtended-ExtraBold.ttf
+  operation = compress
+# Generating ../fonts/variable/Nigggli[wdth,wght].ttf
+build ../fonts/variable/Nigggli[wdth,wght].ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpd0lsi5es
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp_3_n20ro
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp_3_n20ro: $
+    buildTTF instance_ufos/NigggliCondensed-Light.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmph9ee2s_u
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmph9ee2s_u: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp_3_n20ro
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/NigggliCondensed-Light.ttf
+build ../fonts/ttf/NigggliCondensed-Light.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmph9ee2s_u
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp7489jepp
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp7489jepp: $
+    buildTTF instance_ufos/NigggliCondensed-Regular.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpdjoqe7nb
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpdjoqe7nb: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp7489jepp
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/NigggliCondensed-Regular.ttf
+build ../fonts/ttf/NigggliCondensed-Regular.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpdjoqe7nb
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp8ti03s8n
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp8ti03s8n: $
+    buildTTF instance_ufos/NigggliCondensed-SemiBold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpm9dqdvfh
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpm9dqdvfh: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp8ti03s8n
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/NigggliCondensed-SemiBold.ttf
+build ../fonts/ttf/NigggliCondensed-SemiBold.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpm9dqdvfh
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpqya9ngb8
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpqya9ngb8: $
+    buildTTF instance_ufos/NigggliCondensed-Bold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpmker8v3h
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpmker8v3h: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpqya9ngb8
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/NigggliCondensed-Bold.ttf
+build ../fonts/ttf/NigggliCondensed-Bold.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpmker8v3h
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp0_yc_il1
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp0_yc_il1: $
+    buildTTF instance_ufos/Nigggli-Light.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp1q401s8p
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp1q401s8p: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp0_yc_il1
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Nigggli-Light.ttf
+build ../fonts/ttf/Nigggli-Light.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp1q401s8p
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpw1k__0k_
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpw1k__0k_: $
+    buildTTF instance_ufos/Nigggli-Book.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpkdncy2a6
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpkdncy2a6: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpw1k__0k_
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Nigggli-Book.ttf
+build ../fonts/ttf/Nigggli-Book.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpkdncy2a6
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpvimj7sll
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpvimj7sll: $
+    buildTTF instance_ufos/Nigggli-Regular.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmprld_120x
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmprld_120x: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpvimj7sll
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Nigggli-Regular.ttf
+build ../fonts/ttf/Nigggli-Regular.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmprld_120x
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpnt3v45ix
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpnt3v45ix: $
+    buildTTF instance_ufos/Nigggli-SemiBold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpksk6k003
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpksk6k003: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpnt3v45ix
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Nigggli-SemiBold.ttf
+build ../fonts/ttf/Nigggli-SemiBold.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpksk6k003
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp7asmexp9
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp7asmexp9: $
+    buildTTF instance_ufos/Nigggli-Bold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpa4zbxe0o
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpa4zbxe0o: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp7asmexp9
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Nigggli-Bold.ttf
+build ../fonts/ttf/Nigggli-Bold.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpa4zbxe0o
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpc32cr2_4
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpc32cr2_4: $
+    buildTTF instance_ufos/Nigggli-ExtraBold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpa2skj776
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpa2skj776: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpc32cr2_4
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Nigggli-ExtraBold.ttf
+build ../fonts/ttf/Nigggli-ExtraBold.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpa2skj776
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp7__i4x1n
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp7__i4x1n: $
+    buildTTF instance_ufos/NigggliExtended-Light.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpsd4aummr
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpsd4aummr: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp7__i4x1n
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/NigggliExtended-Light.ttf
+build ../fonts/ttf/NigggliExtended-Light.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpsd4aummr
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpggure32f
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpggure32f: $
+    buildTTF instance_ufos/NigggliExtended-Regular.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpahj4ghbd
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpahj4ghbd: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpggure32f
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/NigggliExtended-Regular.ttf
+build ../fonts/ttf/NigggliExtended-Regular.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpahj4ghbd
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmprh09cvb6
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmprh09cvb6: $
+    buildTTF instance_ufos/NigggliExtended-SemiBold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpijb2shwu
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpijb2shwu: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmprh09cvb6
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/NigggliExtended-SemiBold.ttf
+build ../fonts/ttf/NigggliExtended-SemiBold.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpijb2shwu
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp4e5h04ij
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp4e5h04ij: $
+    buildTTF instance_ufos/NigggliExtended-Bold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpj4q2561j
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpj4q2561j: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp4e5h04ij
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/NigggliExtended-Bold.ttf
+build ../fonts/ttf/NigggliExtended-Bold.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpj4q2561j
+  operation = fix
+  args = 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpwaslkslz
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpwaslkslz: $
+    buildTTF instance_ufos/NigggliExtended-ExtraBold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp80ivuwec
+build /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp80ivuwec: $
+    autohint /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmpwaslkslz
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/NigggliExtended-ExtraBold.ttf
+build ../fonts/ttf/NigggliExtended-ExtraBold.ttf: fix $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmp80ivuwec
+  operation = fix
+  args = 
+default $
+    /var/folders/4b/lw_1rmtj7cx_zm2rhgk1tw0h0000gn/T/tmph10dd0m4.buildStatstamp $
+    ../fonts/webfonts/Nigggli[wdth,wght].woff2 $
+    ../fonts/webfonts/NigggliCondensed-Light.woff2 $
+    ../fonts/webfonts/NigggliCondensed-Regular.woff2 $
+    ../fonts/webfonts/NigggliCondensed-SemiBold.woff2 $
+    ../fonts/webfonts/NigggliCondensed-Bold.woff2 $
+    ../fonts/webfonts/Nigggli-Light.woff2 $
+    ../fonts/webfonts/Nigggli-Book.woff2 $
+    ../fonts/webfonts/Nigggli-Regular.woff2 $
+    ../fonts/webfonts/Nigggli-SemiBold.woff2 $
+    ../fonts/webfonts/Nigggli-Bold.woff2 $
+    ../fonts/webfonts/Nigggli-ExtraBold.woff2 $
+    ../fonts/webfonts/NigggliExtended-Light.woff2 $
+    ../fonts/webfonts/NigggliExtended-Regular.woff2 $
+    ../fonts/webfonts/NigggliExtended-SemiBold.woff2 $
+    ../fonts/webfonts/NigggliExtended-Bold.woff2 $
+    ../fonts/webfonts/NigggliExtended-ExtraBold.woff2
