@@ -13,12 +13,25 @@
 
     <script src="js/fontTester.js"></script>
     <style>
-        @font-face { font-family: Nigggli-Regular; src: url("ttf/Nigggli-Regular.ttf"); }
-        @font-face { font-family: Nigggli-Light; src: url("ttf/Nigggli-LIght.ttf"); }
+
+        @font-face { font-family: Nigggli-Light; src: url("ttf/Nigggli-Light.ttf"); }
         @font-face { font-family: Nigggli-Book; src: url("ttf/Nigggli-Book.ttf"); }
+        @font-face { font-family: Nigggli-Regular; src: url("ttf/Nigggli-Regular.ttf"); }
         @font-face { font-family: Nigggli-SemiBold; src: url("ttf/Nigggli-SemiBold.ttf"); }
         @font-face { font-family: Nigggli-Bold; src: url("ttf/Nigggli-Bold.ttf"); }
         @font-face { font-family: Nigggli-ExtraBold; src: url("ttf/Nigggli-ExtraBold.ttf"); }
+
+        @font-face { font-family: NigggliCondensed-Light; src: url("ttf/NigggliCondensed-Light.ttf"); }
+        @font-face { font-family: NigggliCondensed-Regular; src: url("ttf/NigggliCondensed-Regular.ttf"); }
+        @font-face { font-family: NigggliCondensed-SemiBold; src: url("ttf/NigggliCondensed-SemiBold.ttf"); }
+        @font-face { font-family: NigggliCondensed-Bold; src: url("ttf/NigggliCondensed-Bold.ttf"); }
+        @font-face { font-family: NigggliCondensed-ExtraBold; src: url("ttf/NigggliCondensed-ExtraBold.ttf"); }
+
+        @font-face { font-family: NigggliExtended-Light; src: url("ttf/NigggliExtended-Light.ttf"); }
+        @font-face { font-family: NigggliExtended-Regular; src: url("ttf/NigggliExtended-Regular.ttf"); }
+        @font-face { font-family: NigggliExtended-SemiBold; src: url("ttf/NigggliExtended-SemiBold.ttf"); }
+        @font-face { font-family: NigggliExtended-Bold; src: url("ttf/NigggliExtended-Bold.ttf"); }
+        @font-face { font-family: NigggliExtended-ExtraBold; src: url("ttf/NigggliExtended-ExtraBold.ttf"); }
 
         body {
             margin: 0;
@@ -311,8 +324,8 @@
 
     createFontTester({
         container: document.getElementById('tester1'),
-        fonts: ['Nigggli-Light','Nigggli-Book','Nigggli-Regular','Nigggli-SemiBold','Nigggli-Bold','Nigggli-ExtraBold'],
-        initialFont: 'Nigggli-ExtraBold',
+        fonts: ['Nigggli-Light','Nigggli-Book','Nigggli-Regular','Nigggli-SemiBold','Nigggli-Bold', 'NigggliCondensed-Light','NigggliCondensed-Regular','NigggliCondensed-SemiBold','NigggliCondensed-Bold', 'NigggliExtended-Light','NigggliExtended-Regular','NigggliExtended-SemiBold','NigggliExtended-Bold'],
+        initialFont: 'NigggliCondensed-Bold',
         initialSize: 96,
         initialLineHeight: .8,
         features: ['liga','dlig','smcp','c2sc','onum'],
@@ -323,8 +336,8 @@
 
     createFontTester({
         container: document.getElementById('tester2'),
-        fonts: ['Nigggli-Light','Nigggli-Book','Nigggli-Regular','Nigggli-SemiBold','Nigggli-Bold','Nigggli-ExtraBold'],
-        initialFont: 'Nigggli-Light',
+        fonts: ['Nigggli-Light','Nigggli-Book','Nigggli-Regular','Nigggli-SemiBold','Nigggli-Bold', 'NigggliCondensed-Light','NigggliCondensed-Regular','NigggliCondensed-SemiBold','NigggliCondensed-Bold', 'NigggliExtended-Light','NigggliExtended-Regular','NigggliExtended-SemiBold','NigggliExtended-Bold'],
+        initialFont: 'Nigggli-SemiBold',
         initialSize: 48,
         initialLineHeight: .9,
         features: ['liga','dlig','smcp','c2sc','onum'],
@@ -333,7 +346,7 @@
     });
     createFontTester({
         container: document.getElementById('tester3'),
-        fonts: ['Nigggli-Light','Nigggli-Book','Nigggli-Regular','Nigggli-SemiBold','Nigggli-Bold','Nigggli-ExtraBold'],
+        fonts: ['Nigggli-Light','Nigggli-Book','Nigggli-Regular','Nigggli-SemiBold','Nigggli-Bold', 'NigggliCondensed-Light','NigggliCondensed-Regular','NigggliCondensed-SemiBold','NigggliCondensed-Bold', 'NigggliExtended-Light','NigggliExtended-Regular','NigggliExtended-SemiBold','NigggliExtended-Bold'],
         initialFont: 'Nigggli-Book',
         initialSize: 24,
         initialLineHeight: 1.1,
